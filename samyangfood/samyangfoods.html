@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./samyangfoods.css" />
+    <title>삼양식품</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <header class="sy_head">
+      <section class="sy_head_wrap">
+        <a href="#">
+          <span class="sy_logo">
+            <img src="./img/logo.svg" alt="" />
+          </span>
+        </a>
+        <div class="gnb_div">
+          <ul class="gnb_nav">
+            <li>
+              <a href="#">회사소개</a>
+            </li>
+            <li>
+              <a href="#">홍보관</a>
+            </li>
+            <li>
+              <a href="#">브랜드</a>
+            </li>
+            <li>
+              <a href="#">제품</a>
+            </li>
+          </ul>
+        </div>
+        <div class="headerbtns">
+          <button class="headerbtn">
+            <i class="fa-solid fa-headset"></i>
+            <p>고객지원</p>
+          </button>
+          <button class="headerbtn">
+            <i class="fa-solid fa-globe"></i>
+            <p>ENG</p>
+          </button>
+          <button class="headerbtn btn3">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-x" style="display: none"></i>
+            <p>MENU</p>
+          </button>
+        </div>
+      </section>
+    </header>
+
+    <script>
+      $(".fa-bars").click(function () {
+        $(".gnb_div").show();
+        $(this).hide();
+        $(".fa-x").show();
+      });
+      $(".fa-x").click(function () {
+        $(".gnb_div").hide();
+        $(this).hide();
+        $(".fa-bars").show();
+      });
+    </script>
+
+    <div class="pages">
+      <div class="first page onpage">
+        <h2 class="lefttxt"><span>'라면'</span> 에 대한 열정과 신념으로</h2>
+        <br />
+        <h2 class="righttxt"><span>국내 식품 산업</span>에 큰 획을 긋다.</h2>
+      </div>
+      <div class="second page">
+        <div class="head_bg">
+          <div class="second_head">
+            <h2 class="toptxt">
+              <span>'대한민국 최초 라면'</span>&nbsp;삼양라면 부터,
+            </h2>
+            <br />
+            <h2 class="midtxt">
+              전 세계 사람들이 사랑하는 &nbsp;<span>불닭볶음면</span>까지.
+            </h2>
+            <br />
+            <h2 class="bottomtxt">삼양의 다양한 제품을 만나보세요</h2>
+          </div>
+        </div>
+
+        <div class="btn_li">
+          <ul>
+            <li>
+              <h3>라면</h3>
+              <a href="javascript:void(0)" class="fbtn on" data-tab="ramen">
+                <img src="./img/product_tab1.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <h3>스낵</h3>
+              <a href="javascript:void(0)" class="fbtn" data-tab="snack">
+                <img src="./img/product_tab2.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <h3>소스·간편식</h3>
+              <a href="javascript:void(0)" class="fbtn" data-tab="sauce">
+                <img src="./img/product_tab4.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <h3>냉동 간편식</h3>
+              <a href="javascript:void(0)" class="fbtn" data-tab="frozen">
+                <img src="./img/product_tab5.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="second_img_li">
+          <ul class="ramen">
+            <li>
+              <img src="./img/ra_1.jpg" alt="" />
+              <p>화끈한 매운맛!</p>
+              <h3>불닭볶음면</h3>
+            </li>
+            <li>
+              <img src="./img/ra_2.jpg" alt="" />
+              <p>더 깊고 진해진 라면의 원조</p>
+              <h3>삼양라면 오리지널</h3>
+            </li>
+            <li>
+              <img src="./img/ra_3.jpg" alt="" />
+              <p>풍부한 짜장의 맛</p>
+              <h3>짜짜로니</h3>
+            </li>
+            <li>
+              <img src="./img/ra_4.jpg" alt="" />
+              <p>시원한 해물맛이 느껴지는</p>
+              <h3>나가사키 짬뽕</h3>
+            </li>
+            <li>
+              <img src="./img/ra_5.jpg" alt="" />
+              <p>라면보다 더 맛있는라면</p>
+              <h3>맛있는 라면</h3>
+            </li>
+          </ul>
+          <ul class="snack">
+            <li>
+              <img src="./img/sn_1.jpg" alt="" />
+              <p>달콤하게 사르르~</p>
+              <h3>사또밥</h3>
+            </li>
+            <li>
+              <img src="./img/sn_2.jpg" alt="" />
+              <p>맛있게 딱! 잡았다</p>
+              <h3>불닭으로딱!집게</h3>
+            </li>
+            <li>
+              <img src="./img/sn_3.jpg" alt="" />
+              <p>ORIGINAL 최초의 짱구</p>
+              <h3>짱구</h3>
+            </li>
+            <li>
+              <img src="./img/sn_4.jpg" alt="" />
+              <p>깊고 진한 바다의 맛!</p>
+              <h3>회오리킹 해물맛</h3>
+            </li>
+            <li>
+              <img src="./img/sn_5.jpg" alt="" />
+              <p>국내 최초 라면과자</p>
+              <h3>별뽀빠이</h3>
+            </li>
+          </ul>
+          <ul class="sauce">
+            <li>
+              <img src="./img/sa_1.png" alt="" />
+              <p>간편하게 즐기는 불닭소스</p>
+              <h3>불닭소스</h3>
+            </li>
+            <li>
+              <img src="./img/sa_2.png" alt="" />
+              <p>고소한 마요네즈와 만난 불닭</p>
+              <h3>불닭마요</h3>
+            </li>
+            <li>
+              <img src="./img/sa_3.png" alt="" />
+              <p>간편하게 즐기는 화끈한 떡볶이</p>
+              <h3>불닭떡볶이</h3>
+            </li>
+            <li>
+              <img src="./img/sa_4.png" alt="" />
+              <p>매콤한 불닭과 부드러운 크림의 조화</p>
+              <h3>까르보 불닭떡볶이</h3>
+            </li>
+            <li>
+              <img src="./img/sa_5.png" alt="" />
+              <p>쫄깃탱글한 매운맛!</p>
+              <h3>불닭납작당면</h3>
+            </li>
+          </ul>
+          <ul class="frozen">
+            <li>
+              <img src="./img/fr_1.png" alt="" />
+              <p>5가지 향신료로 더 맛있는</p>
+              <h3>쿠티크 리얼크리스피치킨</h3>
+            </li>
+            <li>
+              <img src="./img/fr_2.png" alt="" />
+              <p>쯔란 시즈닝을 더한 쯔란치킨</p>
+              <h3>쿠티크 리얼쯔란치킨</h3>
+            </li>
+            <li>
+              <img src="./img/fr_3.png" alt="" />
+              <p>맛김치와 하바네로맛이 가득한 군만두</p>
+              <h3>쿠티크 김치군만두</h3>
+            </li>
+            <li>
+              <img src="./img/fr_4.png" alt="" />
+              <p>국산돼지고기로 만든 겉바속촉!</p>
+              <h3>삼양프레시 탕수육</h3>
+            </li>
+            <li>
+              <img src="./img/fr_5.png" alt="" />
+              <p>촉촉하고 속이 꽉찬 물만두</p>
+              <h3>삼양프레시 물만두</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="third page">
+        <div class="third_header">
+          <h2>함께해서 더 아름다운세상, <br />삼양이 만들어갑니다.</h2>
+        </div>
+        <div class="third_btn_li">
+          <div class="btn_li">
+            <div class="third_btn">
+              <h2>사회공헌</h2>
+            </div>
+            <div class="third_content">
+              <ol class="content1">
+                <li><h3>맛있는물품 나눔 6억6천5백만원</h3></li>
+                <li>
+                  <h3>
+                    장학/학술 지원 1억8천만원 <span>(장학생 228명 선발)</span>
+                  </h3>
+                </li>
+                <li>
+                  <h3>문화예술 지원 7천2백만원</h3>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="btn_li">
+            <div class="third_btn">
+              <h2>소비자중심</h2>
+            </div>
+            <div class="third_content">
+              <ol class="content1">
+                <li>
+                  <h3>
+                    비건·저당제품 출시 <span>(라면, 스낵, 소스 등 8종)</span>
+                  </h3>
+                </li>
+                <li>
+                  <h3>
+                    사회적책임제품 출시
+                    <span>(점자용기)</span>
+                  </h3>
+                </li>
+                <li>
+                  <h3>소비자 참여 프로그램 운영 <span>(삼양러버)</span></h3>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="btn_li">
+            <div class="third_btn">
+              <h2>윤리·인권경영</h2>
+            </div>
+            <div class="third_content">
+              <ol class="content1">
+                <li><h3>협력회사 ESG평가 지원</h3></li>
+                <li>
+                  <h3>준법경영준수편람</h3>
+                </li>
+                <li>
+                  <h3>인권영향평가 정기 시행</h3>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="forth page">
+        <div class="sns_header">
+          <h2 class="uptxt">삼양 커뮤니티</h2>
+          <h3 class="uptxt">
+            여러분과 함께 <span>'더'</span> 맛있는 세상을 만들어갑니다.
+          </h3>
+        </div>
+
+        <div class="sns_btn side_icon">
+          <a href="javascript:void(0)">
+            <img src="./img/ico_facebook.png" alt="" />
+          </a>
+          <a href="javascript:void(0)">
+            <img src="./img/ico_insta.png" alt="" />
+          </a>
+          <a href="javascript:void(0)">
+            <img src="./img/ico_blog.png" alt="" />
+          </a>
+          <a href="javascript:void(0)">
+            <img src="./img/ico_twitter.png" alt="" />
+          </a>
+        </div>
+        <div class="area_block">
+          <div class="area_1">
+            <div class="video-block left1">
+              <div class="tit">홍보영상</div>
+              <p class="sub">
+                삼양식품의 다채로운 스토리를 <br />영상으로 보여드립니다.
+              </p>
+              <a href="javascript:void(0)">
+                <img src="./img/btn_more_vod.png" alt="" class="btn_more" />
+              </a>
+            </div>
+            <div class="story-block left2">
+              <div class="tit">삼양 사연</div>
+              <p class="sub">
+                삼양식품과 함께한 <br />여러분의 사연을 기다립니다..
+              </p>
+              <a href="javascript:void(0)">
+                <img src="./img/btn_more_comm01.png" alt="" class="btn_more" />
+              </a>
+            </div>
+          </div>
+          <div class="area_2">
+            <div class="donate-block right1">
+              <div class="tit">맛있는 나눔</div>
+              <p class="sub">모두가 행복한 맛있는 세상</p>
+              <a href="javascript:void(0)">
+                <img src="./img/btn_more_comm03.png" alt="" class="btn_more" />
+              </a>
+            </div>
+            <div class="notice-block right2">
+              <div class="tit_b">공지사항</div>
+              <p class="sub_b">삼양식품 개인정보취급방침 개정 안내</p>
+              <p class="sub_b_2">2022/09/07</p>
+            </div>
+            <div class="mall-block right3">
+              <div class="tit">삼양식품 공식몰</div>
+              <p class="sub">삼양식품의 다양한 제품을 만나보세요.</p>
+              <a href="javascript:void(0)">
+                <img src="./img/btn_more_comm02.png" alt="" class="btn_more" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fifth page">
+        <div class="left_contant">
+          <img src="./img/logo2.png" alt="" />
+          <ul class="icon_li">
+            <li>
+              <a href="javascript:void(0)">
+                <img src="./img/ico_sns_blog2.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="./img/ico_sns_insta2.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="./img/ico_sns_twitter2.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                <img src="./img/ico_sns_facebook2.png" alt="" />
+              </a>
+            </li>
+          </ul>
+          <div class="footer_li">
+            <ul>
+              <li>
+                <a href="javascript:void(0)" id="left">회사 소개</a>
+              </li>
+              <li>|</li>
+              <li>
+                <a href="javascript:void(0)">고객지원</a>
+              </li>
+              <li>|</li>
+              <li>
+                <a href="javascript:void(0)">IR</a>
+              </li>
+              <li>|</li>
+              <li>
+                <a href="javascript:void(0)">인재채용</a>
+              </li>
+              <li>|</li>
+              <li>
+                <a href="javascript:void(0)">찾아오시는 길</a>
+              </li>
+              <li>|</li>
+              <li>
+                <a href="javascript:void(0)">개인정보처리방침</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_lis">
+            <ul>
+              <li>
+                <a href="javascript:void(0)">
+                  삼양식품(주) 서울특별시 성북구 오패산로3길 104(하월곡동)
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"> 대표이사 : 김정수, 장재성 </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  >사업자등록번호 : 102-81-05450│통신판매신고번호 :
+                  2016-서울성북-0790</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  고객만족센터 : 080-940-3333(무료상담전화)│대표전화 :
+                  02-940-3000
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(".snack").hide();
+      $(".sauce").hide();
+      $(".frozen").hide();
+
+      $(".fbtn").click(function () {
+        $(".fbtn").removeClass("on");
+        $(this).addClass("on");
+
+        $(".second_img_li>ul").hide();
+        var name1 = this.dataset.tab;
+        $("." + name1).show();
+      });
+    </script>
+    <!-- 페이징 -->
+    <ul class="pagination"></ul>
+
+    <script>
+      window.onload = () => {
+        const Slider = function (pages, pagination) {
+          let slides = [],
+            btns = [],
+            count = 0,
+            current = 0,
+            touchstart = 0,
+            animation_state = false;
+
+          const init = () => {
+            slides = pages.children;
+            count = slides.length;
+            for (let i = 0; i < count; i++) {
+              slides[i].style.bottom = -(i * 100) + "%";
+              let btn = document.createElement("li");
+              btn.dataset.slide = i;
+              btn.addEventListener("click", btnClick);
+              btns.push(btn);
+              pagination.appendChild(btn);
+            }
+            btns[0].classList.add("active");
+          };
+
+          const gotoNum = (index) => {
+            if (index != current && !animation_state) {
+              animation_state = true;
+              setTimeout(() => (animation_state = false), 500);
+              btns[current].classList.remove("active");
+              current = index;
+              btns[current].classList.add("active");
+              for (let i = 0; i < count; i++) {
+                slides[i].style.bottom = (current - i) * 100 + "%";
+                slides[i].classList.remove("onpage");
+              }
+              slides[current].classList.add("onpage");
+            }
+          };
+
+          const gotoNext = () =>
+            current < count - 1 ? gotoNum(current + 1) : false;
+          const gotoPrev = () => (current > 0 ? gotoNum(current - 1) : false);
+          const btnClick = (e) => gotoNum(parseInt(e.target.dataset.slide));
+          pages.ontouchstart = (e) => (touchstart = e.touches[0].screenY);
+          pages.ontouchend = (e) =>
+            touchstart < e.changedTouches[0].screenY ? gotoPrev() : gotoNext();
+          pages.onmousewheel = pages.onwheel = (e) =>
+            e.deltaY < 0 ? gotoPrev() : gotoNext();
+
+          init();
+        };
+
+        let pages = document.querySelector(".pages");
+        let pagination = document.querySelector(".pagination");
+        let slider = new Slider(pages, pagination);
+      };
+    </script>
+  </body>
+</html>

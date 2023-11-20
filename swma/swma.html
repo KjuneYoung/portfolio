@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./swma.css" />
+
+    <title>수원미술박물관 | SWMA</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <header class="swmahead">
+      <section class="swmahead_wrap">
+        <a href="#" class="swma_logo_link">
+          <span class="swma_logo">
+            <img src="./swma logo_w.svg" alt="" />
+          </span>
+        </a>
+        <div class="swmahead_content">
+          <div class="swmahead_top_bar">
+            <div class="swmahead_eyebrow_link">
+              <a href="#">수원소식</a>
+              <span>|</span>
+              <a href="#">정보공개</a>
+              <span>|</span>
+              <a href="#">분야별 정보</a>
+            </div>
+            <div class="swmahead_top_right">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <div class="swmahead_bottom">
+            <nav class="nav-main">
+              <i class="fa-solid fa-x"></i>
+              <ul class="nav-main_pri">
+                <li class="nav-main_pri_item">
+                  <a class="main_item1" href="#">전시와 프로그램</a>
+                  <div class="nav-main_subnav">
+                    <ul class="nav-main_secondary">
+                      <li class="nav-main_secondary_item">
+                        <a class="nav-sub_item" href="#">전시</a>
+                      </li>
+                      <li class="nav-main_secondary_item">
+                        <a class="nav-sub_item" href="#">교육 프로그램</a>
+                      </li>
+                      <li class="nav-main_secondary_item">
+                        <a class="nav-sub_item" href="#">문화행사</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-main_pri_item">
+                  <a class="main_item2" href="#">소장품</a>
+                  <div class="nav-main_subnav">
+                    <ul class="nav-main_secondary">
+                      <li class="nav-main_secondary_item">
+                        <a class="nav-sub_item" href="#">SwMA 소장품</a>
+                      </li>
+                      <li class="nav-main_secondary_item">
+                        <a class="nav-sub_item" href="#">미술과 이야기</a>
+                      </li>
+                      <li class="nav-main_secondary_item">
+                        <a class="nav-sub_item" href="#">후원 및 기부</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-main_pri_item">
+                  <a class="main_item3" href="#">미술연구</a>
+                  <div class="nav-main_subnav">
+                    <ul class="nav-main_secondary">
+                      <li class="nav-main_secondary_item">
+                        <a class="nav-sub_item" href="#">아카이브</a>
+                      </li>
+                      <li class="nav-main_secondary_item">
+                        <a class="nav-sub_item" href="#">연구 및 지원</a>
+                      </li>
+                      <li class="nav-main_secondary_item">
+                        <a class="nav-sub_item" href="#">도서자료 및 문헌</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-main_pri_item">
+                  <a class="main_item4" href="#">방문하기</a>
+                  <div class="nav-main_subnav">
+                    <ul class="nav-main_secondary">
+                      <li class="nav-main_secondary_item">
+                        <a class="nav-sub_item" href="#">위치 확인하기</a>
+                      </li>
+                      <li class="nav-main_secondary_item">
+                        <a class="nav-sub_item" href="#">날짜 예약하기</a>
+                      </li>
+                      <li class="nav-main_secondary_item">
+                        <a class="nav-sub_item" href="#">관람안내</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-main_pri_item">
+                  <a class="main_item5" href="#">응답소</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <script>
+      $(".fa-bars").click(function () {
+        $(".swmahead_bottom").css("left", "0%");
+      });
+      $(".fa-x").click(function () {
+        $(".swmahead_bottom").css("left", "100%");
+      });
+    </script>
+
+    <main>
+      <section class="swma_banner">
+        <div class="swma_banner_vid">
+          <iframe
+            src="https://player.vimeo.com/video/839781941?speed=0&amp;pip=0&amp;loop=1&amp;background=1&amp;quality=undefined&amp;app_id=122963&amp;texttrack=undefined"
+            width="426"
+            height="240"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen=""
+            title="2023_Summer_Homepage_LJ_1"
+            data-ready="true"
+            id="vimeo-5646787"
+          ></iframe>
+        </div>
+        <div class="swma_banner_copy">
+          <h2 class="swma_banner_title">
+            <span> Welcome To SwMA</span>
+          </h2>
+          <a href="#" class="swma_banner_btn_a">
+            <span> 전시 예매하기</span>
+          </a>
+        </div>
+      </section>
+      <section class="swma_wrapper">
+        <div class="wrapper_header">
+          <div>
+            <h2 class="wrapper_header_title">진행중인 전시</h2>
+          </div>
+          <div class="wrapper_header_cta">
+            <a class="wrapper_link" href="#">모든 전시 확인하기 </a>
+          </div>
+        </div>
+        <div class="shelf_wrapper">
+          <div #swiperRef="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#"></a>
+                <img src="./img/wrapper_1.jpg" alt="" />
+                <h2>자기 : 과거를 만나다</h2>
+                <h3>2023.03 - 2024.02.14</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"></a>
+                <img src="./img/wrapper_2.jpg" alt="" />
+                <h2>로렌 : 흩어지다</h2>
+                <h3>2023.07 - 2024.01.20</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"></a>
+                <img src="./img/wrapper_3.jpg" alt="" />
+                <h2>다다이즘</h2>
+                <h3>2023.06 - 2023.12</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"></a>
+                <img src="./img/wrapper_4.jpg" alt="" />
+                <h2>바스키아 특별전</h2>
+                <h3>2023.10 - 2023.12</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"></a>
+                <img src="./img/wrapper_5.jpg" alt="" />
+                <h2>알렉상드로 카바넬 특별전</h2>
+                <h3>2023.05 - 2024.02</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+
+          <!-- <p class="append-buttons">
+            <button class="prepend-2-slides">Prepend 2 Slides</button>
+            <button class="prepend-slide">Prepend Slide</button>
+            <button class="append-slide">Append Slide</button>
+            <button class="append-2-slides">Append 2 Slides</button>
+          </p> -->
+        </div>
+      </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          // centeredSlides: true,
+          spaceBetween: 70,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+
+          breakpoints: {
+            950: {
+              slidesPerView: 2,
+              spaceBetween: 150,
+            },
+          },
+        });
+
+        var appendNumber = 4;
+        var prependNumber = 1;
+        document
+          .querySelector(".prepend-2-slides")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.prependSlide([
+              '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+              '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            ]);
+          });
+        document
+          .querySelector(".prepend-slide")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.prependSlide(
+              '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+            );
+          });
+        document
+          .querySelector(".append-slide")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.appendSlide(
+              '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+            );
+          });
+        document
+          .querySelector(".append-2-slides")
+          .addEventListener("click", function (e) {
+            e.preventDefault();
+            swiper.appendSlide([
+              '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+              '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+            ]);
+          });
+      </script>
+      <section class="swma_promo_container">
+        <div class="swma_promo_ct">
+          <div class="swma_promo_img_wrapper">
+            <a href="#" class="invisuable_link_ct1"></a>
+            <figure class="swma_promo_img_figure">
+              <img src="./img/promo_1.jpg" alt="" class="swma_promo_img" />
+            </figure>
+          </div>
+          <div class="swma_promo_copywrapper">
+            <div class="swma_promo_copy">
+              <h2>SwMA</h2>
+              <p>
+                2000년에 만들어진 수원미술박물관은 시민들의 다양한 문화생활과
+                <br />가치높은 문화예술작품을 예술가들과 함께 연구하고 복원하여
+                <br />더 나은 작품으로 여러분들의 눈 앞에 선보입니다.
+              </p>
+              <a href="#">
+                <span>더 알아보기</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swma_promo_ct flip">
+          <div class="swma_promo_copywrapper">
+            <div class="swma_promo_copy">
+              <h2>별이 빛나는 밤</h2>
+              <p>
+                세계에서 가장 유명한 화가 중 한명인 빈센트 반 고흐의
+                <br />다양한 작품 중 인기 많은 작품 '별이 빛나는 밤'을
+                <br />지금 수원미술박물관에서 만나보세요.
+              </p>
+              <a href="#">
+                <span>더 알아보기</span>
+              </a>
+            </div>
+          </div>
+          <div class="swma_promo_img_wrapper">
+            <a href="#" class="invisuable_link_ct1"></a>
+            <figure class="swma_promo_img_figure">
+              <img src="./img/promo_2.jpg" alt="" class="swma_promo_img" />
+            </figure>
+          </div>
+        </div>
+        <div class="swma_promo_ct">
+          <div class="swma_promo_img_wrapper">
+            <a href="#" class="invisuable_link_ct1"></a>
+            <figure class="swma_promo_img_figure">
+              <img src="./img/promo_3.jpg" alt="" class="swma_promo_img" />
+            </figure>
+          </div>
+          <div class="swma_promo_copywrapper">
+            <div class="swma_promo_copy">
+              <h2>인상주의 그리고 모네</h2>
+              <p>
+                프랑스의 인상주의 화가로, 인상파의 개척자이며 지도자 입니다.
+                <br />생전에 다양한 작품 활동을 한 그의 작품을 보면 문득
+                <br />따듯함이 느껴지기도 한다. 인상주의 특징과 다양한 작품들은
+                <br />수원미술박물관에서 관람할 수 있습니다.
+              </p>
+              <a href="#">
+                <span>더 알아보기</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swma_promo_ct flip">
+          <div class="swma_promo_copywrapper">
+            <div class="swma_promo_copy">
+              <h2>가이아 그리고 루나</h2>
+              <p>
+                고대부터 많은 사람들은 지구와 달에 대해 다양한
+                <br />구전, 신화, 전설이 지금까지 전해져 내려오고있습니다.
+                <br />다양한 작품에서도 나타나는 지구와 달에 신비로움을
+                만나보세요.
+              </p>
+              <a href="#">
+                <span>더 알아보기</span>
+              </a>
+            </div>
+          </div>
+          <div class="swma_promo_img_wrapper">
+            <a href="#" class="invisuable_link_ct1"></a>
+            <figure class="swma_promo_img_figure">
+              <img src="./img/promo_4.jpg" alt="" class="swma_promo_img" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="swma_email_signup">
+        <div class="swma_email_wrapper">
+          <label for="email" class="email_signup_label">
+            <h1 class="email_signup_title">이메일로 더 많은 소식 받아보기</h1>
+          </label>
+          <div class="email_sign_form">
+            <div class="email_signup_input">
+              <input
+                type="email"
+                class="email_input_c"
+                placeholder="이메일을 입력해주세요."
+              />
+              <button class="email_input_btn">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="global-footer">
+      <section class="global-footer_location">
+        <div class="swma_footer_logo">
+          <a href="#" class="swma_footer_logo_link">
+            <span class="swma_logo_footer">
+              <img src="./swma logo_b.svg" alt="" />
+            </span>
+          </a>
+        </div>
+        <div class="swma_footer_location_items">
+          <ul>
+            <li class="swma_footer_location_item">
+              <div class="swma_adress_name">
+                <a href="#">
+                  <span>SwMA - 수원미술박물관</span>
+                </a>
+              </div>
+              <div class="swma_adress_info">
+                <div class="swma_adress_info_items">
+                  <div class="swma_adress_info_item">장다리로 32번길 39-2</div>
+                  <div class="swma_adress_info_item">경기도 수원시 팔달구</div>
+                  <div class="swma_adress_info_item">Tel :031-123-1234</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="swma_footer_mobile_icon">
+          <div class="smwa_footer_icon_intro">SwMA 팔로우하기</div>
+          <ul>
+            <li class="swma_footer_sns_item">
+              <div class="swma_footer_sns_icon">
+                <a href="#">
+                  <i class="fa-brands fa-square-facebook"></i>
+                </a>
+              </div>
+            </li>
+            <li class="swma_footer_sns_item">
+              <div class="swma_footer_sns_icon">
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+            </li>
+            <li class="swma_footer_sns_item">
+              <div class="swma_footer_sns_icon">
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </li>
+            <li class="swma_footer_sns_item">
+              <div class="swma_footer_sns_icon">
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="global-footer_link_container">
+        <div class="global-footer_f">
+          <ul class="global-footer_nav-items">
+            <li class="global-footer_nav_item">
+              <a href="#">전시</a>
+            </li>
+            <li class="global-footer_nav_item">
+              <a href="#">교육 프로그램</a>
+            </li>
+            <li class="global-footer_nav_item">
+              <a href="#">문화행사</a>
+            </li>
+            <li class="global-footer_nav_item">
+              <a href="#">날짜 예약하기</a>
+            </li>
+            <li class="global-footer_nav_item">
+              <a href="#">관람안내</a>
+            </li>
+          </ul>
+        </div>
+        <div class="global-footer_f">
+          <ul class="global-footer_nav-items">
+            <li class="global-footer_nav_item">
+              <a href="#">미술연구</a>
+            </li>
+            <li class="global-footer_nav_item">
+              <a href="#">연구 및 지원</a>
+            </li>
+            <li class="global-footer_nav_item">
+              <a href="#">아카이브</a>
+            </li>
+            <li class="global-footer_nav_item">
+              <a href="#">도서자료 및 문헌</a>
+            </li>
+          </ul>
+        </div>
+        <div class="global-footer_f">
+          <ul class="global-footer_nav-items">
+            <li class="global-footer_nav_item">
+              <a href="#">SwMA 소장품</a>
+            </li>
+            <li class="global-footer_nav_item">
+              <a href="#">미술 과 이야기</a>
+            </li>
+            <li class="global-footer_nav_item">
+              <a href="#">후원 및 기부</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="global-footer_ld">
+        <div>© 2000–2023 The Suwon Museum of Art. All rights reserved.</div>
+      </section>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
