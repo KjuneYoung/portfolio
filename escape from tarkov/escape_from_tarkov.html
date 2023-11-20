@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./escape_from_tarkov.css" />
+    <title>Escape From Tarkov</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <header class="eft_header">
+      <section class="eft_header_wrap">
+        <a href="#" class="eft_logo_link">
+          <span class="eft_logo">
+            <img src="./img/logo.png" alt="eft_logo" />
+          </span>
+        </a>
+        <div class="eft_conetents">
+          <nav class="eft_header_nav">
+            <ul class="header_navs">
+              <li class="header_nav_item">
+                <a href="#eft_1" class="main_item"> NEWS </a>
+              </li>
+              <li class="header_nav_item">
+                <a href="#eft_2" class="main_item"> ABOUT </a>
+              </li>
+              <li class="header_nav_item">
+                <a href="#eft_3" class="main_item"> EDITION </a>
+              </li>
+              <li class="header_nav_item">
+                <a href="#" class="main_item"> MERCH </a>
+              </li>
+              <li class="header_nav_item">
+                <a href="#" class="main_item"> SUPPORT </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <a href="#" class="eft_logo_link">
+          <span class="eft_logo">
+            <img src="./img/bsg_logo.png" alt="bsg_logo" />
+          </span>
+        </a>
+      </section>
+    </header>
+
+    <main>
+      <section class="eft_banner">
+        <div class="eft_banner_slide">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-txt">
+                  <h2>Realistic FPS</h2>
+                  <!-- <h3></h3> -->
+                </div>
+                <img src="./img/slide1mk17.jpg" alt="MK17 TARKOV1" />
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-txt">
+                  <h2>Map Design</h2>
+                  <!-- <h3></h3> -->
+                </div>
+                <img src="./img/slide2lighthouse.jpg" alt="LIGHTHOUSE TARKOV2" />
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-txt">
+                  <h2>Modifie Weapon</h2>
+                  <!-- <h3>our game play with your friends</h3> -->
+                </div>
+                <img src="./img/slide3g36.jpg" alt="G36 TARKOV3" />
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-txt">
+                  <h2>Dynamic Weather/Time</h2>
+                  <!-- <h3></h3> -->
+                </div>
+                <img src="./img/slide4nvg.jpg" alt="NVG TARKOV4" /></div>
+              <div class="swiper-slide">
+                <div class="swiper-txt">
+                  <h2>Play With Friends</h2>
+                  <!-- <h3>our game play with your friends</h3> -->
+                </div>
+                <img src="./img/slide5coop.jpg" alt="COOPPLAY TARKOV5" /></div>
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
+      </section>
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 10,
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+      <section class="eft_news" id="eft_1">
+        <div class="container">
+          <h2>News</h2>
+          <div class="eft_news_section">
+            <ul id="news-list">
+              <li id="news_id100">
+                <div class="container">
+                  <div class="img">
+                    <a href="javascript:void(0)"></a>
+                  </div>
+                  <div class="info">
+                    <div class="headtxt">
+                      <span>2023.07.08</span>
+                      <a href="javascript:void(0)">update 0.13.2.12-beta</a>
+                    </div>
+                    <div class="description">
+                      We have installed an update containing several fixes and changes.
+                    </div>
+                  </div>
+                  <div class="read button">
+                    <a href="javascript:void(0)">Read >></a>
+                  </div>
+                </div>
+              </li>
+              <li id="news_id99">
+                <div class="container">
+                  <div class="img">
+                    <a href="javascript:void(0)"></a>
+                  </div>
+                  <div class="info">
+                    <div class="headtxt">
+                      <span>2023.05.19</span>
+                      <a href="javascript:void(0)">update 0.13.2.11</a>
+                    </div>
+                    <div class="description">
+                      We have installed an update containing several fixes and changes.
+                    </div>
+                  </div>
+                  <div class="read button">
+                    <a href="javascript:void(0)">Read >></a>
+                  </div>
+                </div>
+              </li>
+              <li id="news_id98">
+                <div class="container">
+                  <div class="img">
+                    <a href="javascript:void(0)"></a>
+                  </div>
+                  <div class="info">
+                    <div class="headtxt">
+                      <span>2023.04.10</span>
+                      <a href="javascript:void(0)">update 0.13.2</a>
+                    </div>
+                    <div class="description">
+                      We present the Escape from Tarkov 0.13.2 technical update.
+                    </div>
+                  </div>
+                  <div class="read button">
+                    <a href="javascript:void(0)">Read >></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="eft_about" id="eft_2">
+        <div class="container test">
+          <!-- <h2>About</h2> -->
+          <p id="center">
+            <img src="./img/get_ready.png" alt="">
+          </p>
+          <p>Escape from Tarkov is a hardcore and realistic online first-person action RPG/Simulator with MMO features and a story-driven walkthrough.</p>
+          <p>With each passing day the situation in the Norvinsk region grows more and more complicated. Incessant warfare in Tarkov has sparked massive panic; the local population has fled the city, but those who stayed are looking to improve their fortunes at the expense of others. Having accepted the new reality, savage Tarkov locals - "Scavs" flocked into well-armed gangs and started the redivision of the city. Nowadays, Tarkov is separated by unseen borders, controlled by different groups. Gain-greedy gunmen would go to any length to have their way, including the murder of civilians and direct confrontation with the two private military companies.</p>
+          <div style="clear: both;"></div>
+          <h4>Tarkov city, Norvinsk region. Present time.</h4>
+          <img src="./img/norvinsk.jpg" alt="" class="show_img_left">
+          <p>The events of the Escape from Tarkov take place in the fictional Norvinsk's region Special Economic Zone that became a gateway between Russia and Europe. Preferential conditions for large international companies, however, have not only attracted law-abiding businesses, but corporations of dubious intent as well. In Tarkov, one of the largest cities of the region, a transatlantic corporation became the ground zero of a political scandal. Six months later, the political standoff escalated into an armed conflict involving UN peacekeepers, Internal Troops of the Ministry of Internal Affairs, and two private military companies. The region’s borders were sealed off, and those trapped in the middle of this local warfare flare up were isolated from the outside world.</p>
+          <div style="clear: both;"></div>
+          <h4>The confrontation on the edge of darkness.</h4>
+          <img src="./img/norvinsk.jpg" alt="" class="show_img_right">
+          <p>The most active forces in the Norvinsk region are two private military companies, hired by the sides of the initial conflict. USEC, employed by the notorious Terra Group international corporation, vigorously engages in armed clashes, hindering the investigation of Terra Group activities, carried on by local authorities. Moreover, according to intelligence agencies, USEC provides armed cover to illegal work and research of the foreign companies, whereas BEAR, allegedly created on direct orders of the Russian government, is employed by the Norvinsk region officials to uncover any evidence of the Terra Group's illicit activities.</p>
+          <div style="clear: both;"></div>
+        </div>
+
+      </section>
+      <section class="eft_edition" id="eft_3">
+        <div class="container">
+          <h2>EDITION</h2>
+          <div class="edition_direct">
+            <a href="#standard">
+              standard edition
+            </a>
+            <a href="#lb_bg">
+              Left Behind edition
+            </a>
+            <a href="#pfe_bg">
+              Prepare To Escape edition
+            </a>
+            <a href="#eod_bg">
+              Edge Of Darkness edition
+            </a>
+          </div>
+          <div class="edition-list">
+            <div class="edition" id="standard">
+              <img src="./img/preorder_standard.png" alt="">
+              <!-- <h3>Standard Edition</h3> -->
+              <ol>
+                <li>Guaranteed instant access to closed beta</li>
+                <li>Digital copy pre-load</li>
+                <li>Basic stash (10x28 cells)</li>
+                <li>Bonus equipment at start, including:</li>
+              </ol>
+                <p class="policy">When you place a pre-order you automatically agree to <span> Rules of the Game.</span></p>
+                <p class="policy2">The additional fees are not included in the price. <br> The final cost will be presented before the payment. <br> Different payment methods include different fees.</p>
+
+              <div class="price">
+                <h3 class="price_margin">44.99$</h3>
+                <button class="button price_margin">Pre-order</button>
+              </div>
+              <div class="gift">
+                <h4>purchase as gift</h4>
+              </div>  
+            </div>
+            <div class="edition" id="lb_bg">
+                <img src="./img/preorder_left_behind.png" alt="">
+              <!-- <h3>Standard Edition</h3> -->
+              <ol>
+                <li>Guaranteed instant access to closed beta</li>
+                <li>Digital copy pre-load</li>
+                <li>Increased size of stash (10x38)</li>
+                <li>Additional equipment and resources in stash:</li>
+              </ol>
+                <p class="policy">When you place a pre-order you automatically agree to <span> Rules of the Game.</span></p>
+                <p class="policy2">The additional fees are not included in the price. <br> The final cost will be presented before the payment. <br> Different payment methods include different fees.</p>
+
+              <div class="price">
+                <h3 class="price_margin">74.99$</h3>
+                <button class="button price_margin">Pre-order</button>
+              </div>
+              <div class="gift">
+                <h4>purchase as gift</h4>
+              </div> 
+            </div>
+            <div class="edition" id="pfe_bg">
+              <img src="./img/preorder_prepare_for_escape.png" alt="">
+              <!-- <h3>Standard Edition</h3> -->
+              <ol>
+                <li>Guaranteed instant access to closed beta</li>
+                <li>Digital copy pre-load</li>
+                <li>Greatly increased size of stash (10x48)</li>
+                <li>Additional equipment and resources in stash:</li>
+                <li>Initially good standing with all in-game traders</li>
+              </ol>
+                <p class="policy">When you place a pre-order you automatically agree to <span> Rules of the Game.</span></p>
+                <p class="policy2">The additional fees are not included in the price. <br> The final cost will be presented before the payment. <br> Different payment methods include different fees.</p>
+
+              <div class="price">
+                <h3 class="price_margin">99.99$</h3>
+                <button class="button price_margin">Pre-order</button>
+              </div>
+              <div class="gift">
+                <h4>purchase as gift</h4>
+              </div> 
+            </div>
+            <div class="edition" id="eod_bg">
+              <img src="./img/preorder_edge_of_darkness.png" alt="">
+              <!-- <h3>Standard Edition</h3> -->
+              <ol>
+                <li>Guaranteed instant access to closed beta</li>
+                <li>Digital copy pre-load</li>
+                <li>Greatly increased size of stash (10x48)</li>
+                <li>Additional equipment and resources in stash:</li>
+                <li>Initially good standing with all in-game traders</li>
+                <li>Unique in-game ID</li>
+                <li>Free access to all subsequent DLCs (Season pass)</li>
+              </ol>
+                <p class="policy">When you place a pre-order you automatically agree to <span> Rules of the Game.</span></p>
+                <p class="policy2">The additional fees are not included in the price. <br> The final cost will be presented before the payment. <br> Different payment methods include different fees.</p>
+
+              <div class="price">
+                <h3 class="price_margin">139.99$</h3>
+                <button class="button price_margin">Pre-order</button>
+              </div>
+              <div class="gift">
+                <h4>purchase as gift</h4>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="eft_footer">
+      <div class="eft_ready">
+        <img src="./img/get_ready.png" alt="">
+      </div>
+      <div class="icons">
+        <div class="inline icon">
+          <img src="./img/get_ready_1.png" alt="">
+        </div>
+        <div class="inline icon">
+          <img src="./img/get_ready_2.png" alt="">
+        </div>
+      </div>
+      <div class="footer_contant">
+        <div class="container">
+          <div class="footer_left">
+            <a href="#">
+              <img src="./img/bsg_logo.png" alt="">
+            </a>
+          </div>
+          <div class="footer_right">
+            <p>© 2015-2023 BATTLESTATE GAMES LIMITED. ALL RIGHTS RESERVED.</p>
+            <div class="footer_right_bottom">
+              <p>LICENSE AGREEMENT</p>
+              <h4>|</h4>
+              <p>RULES OF THE GAME</p>
+              <h4>|</h4>
+              <p>PRIVACY POLICY</p>
+              <h4>|</h4>
+              <p>FORUM RULES</p>
+              <h4>|</h4>
+              <p>PRESS KIT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
