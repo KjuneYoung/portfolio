@@ -402,7 +402,8 @@ a{
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
+  object-fit: contain;
 }
 
 .swiper {
@@ -448,54 +449,6 @@ a{
   background-color: #333;
   border: 0;
   border-radius: 10px;
-}
-
-.design_box{
-  display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.design_img{
-  width: 300px;
-  height: 300px;
-}
-
-.design_img a{
-  width: 100%;
-  height: 100%;
-  display: block;
-
-}
-
-.design_img1{
-  background: url(./img/design_a1.jpg) center center;
-  background-size: cover;
-  margin-right: 16px;
-  margin-bottom: 20px;
-}
-
-.design_img2{
-  background: url(./img/design_a2.jpg) center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 16px;
-  margin-bottom: 20px;
-}
-
-.design_img3{
-  background: url(./img/design_a3.png) center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 16px;
-  margin-bottom: 20px;
-}
-
-.design_img4{
-  background: url(./img/design_a4.png) center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 16px;
 }
 
 
